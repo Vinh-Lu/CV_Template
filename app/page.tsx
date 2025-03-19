@@ -2,6 +2,8 @@ import { Mail,Phone,MapPin,Calendar,User,Briefcase,GraduationCap,Info } from "lu
 import { Card,CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
+
+
 const data = {
   personalInfo: {
     name: "TRAN VU LINH",
@@ -30,7 +32,34 @@ const data = {
       ],
       technology: "ReactJS, Redux, Antd, Tailwind CSS, Next.js, TypeScript, and CMS Strapi for web application development and maintenance."
     },
-    // Add other experiences similarly
+    {
+      title: "FRONT DEVELOPER (FULL TIME)",
+      company: "FPT TELECOM JOINT STOCK COMPANY",
+      period: "06/2018 - 03/2022",
+      position: "Member",
+      teamSize: "6",
+      responsibilities: [
+        "Implementing features such as admin management systems, dashboards for data visualization, creating and implementing website layouts based on product wireframes, developing new features, handling promotional events, and building file storage and upload functionalities for web applications.",
+        "Experience integrating MoMo, ShopeePay, BlueSea, and ZaloPay APIs.",
+        "Skilled in MySQL, MongoDB, MariaDB, and Redis (for caching), optimizing performance with stored procedures and triggers."
+      ],
+      technology: "Yii2, Material.io, AngularJS, ReactJS, Ajax."
+    },
+    {
+      title: "FRONT DEVELOPER (FULL TIME)",
+      company: "HOANG VINH PHAT COMPANY",
+      period: "05/2017 - 05/2018",
+      position: "Member",
+      teamSize: "3",
+      responsibilities: [
+        "Building and customizing websites based on the Flatsome theme, modifying designs according to client requirements.",
+        "Creating custom post types, custom categories, custom archives, and custom pages, as well as developing custom shortcodes and functions.",
+        "Implementing WooCommerce for e-commerce websites.",
+        "Utilizing Advanced Custom Fields (ACF) to create dynamic and customizable fields.",
+        "Optimizing and configuring available plugins to enhance website performance and functionality."
+      ],
+      technology: "Developing web applications using WordPress, PHP, HTML, and CSS."
+    }
   ],
   education: [
     {
