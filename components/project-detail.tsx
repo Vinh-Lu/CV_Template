@@ -154,40 +154,7 @@ export function ProjectDetail({ project, isOpen, onClose }: ProjectDetailProps) 
                 </div>
               </div>
 
-              <div className="bg-[#1a1a1a] rounded-xl p-6 border border-[#333]">
-                <h3 className="text-xl font-bold mb-4 text-white">Project Links</h3>
-                <div className="space-y-3">
-                  {project.liveUrl && (
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="w-full justify-between border-[#333] hover:border-blue-500 hover:bg-[#252525]"
-                    >
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex items-center">
-                        <span>Live Demo</span>
-                        <ExternalLink className="h-4 w-4 ml-2" />
-                      </a>
-                    </Button>
-                  )}
-                  {project.githubUrl && (
-                    <Button
-                      asChild
-                      variant="outline"
-                      className="w-full justify-between border-[#333] hover:border-blue-500 hover:bg-[#252525]"
-                    >
-                      <a
-                        href={project.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center"
-                      >
-                        <span>Source Code</span>
-                        <Github className="h-4 w-4 ml-2" />
-                      </a>
-                    </Button>
-                  )}
-                </div>
-              </div>
+              
             </div>
           </div>
 

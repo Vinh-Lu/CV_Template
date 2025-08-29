@@ -1,64 +1,137 @@
-import { Mail,Phone,MapPin,Calendar,User,Briefcase,GraduationCap,Info } from "lucide-react"
-import { Card,CardContent } from "@/components/ui/card"
+import { Mail, Phone, MapPin, Calendar, User, Briefcase, GraduationCap, Info } from "lucide-react"
+import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-
 
 const data = {
   personalInfo: {
     name: "TRAN VU LINH",
-    title: "WEB DEVELOPER",
+    title: "FRONTEND DEVELOPER",
     contacts: [
-      { icon: Phone,text: "0902348153" },
-      { icon: Mail,text: "tranvulinh280694@gmail.com" },
-      { icon: MapPin,text: "451/3/8 Pham The Hien, Ward 3, District 8, HCMC" },
-      { icon: Calendar,text: "28/06/1994" }
+      { icon: Phone, text: "0902348153" },
+      { icon: Mail, text: "tranvulinh280694@gmail.com" },
+      { icon: MapPin, text: "451/3/8 Pham The Hien, Ward 3, District 8, HCMC" },
+      { icon: Calendar, text: "28/06/1994" }
     ],
     imageSrc: "/placeholder.svg?height=128&width=128"
   },
-  objective: "I'm a front-end developer, focus is on building the user interface and user experience of websites. My work with a combination of programming languages, such as HTML, CSS, and JavaScript, ReactJs, NextJS ... to create interfaces that users can interact with. Besides, I also know the backend (PHP). I believe I can do this job and I think it's suitable for me.",
+  objective:
+    "Frontend Developer skilled in React, Next.js, and TypeScript. Experienced in building scalable, high-performance web applications and optimizing user experience. Passionate about problem-solving, contributing to long-term product growth.",
   experience: [
     {
-      title: "FRONT DEVELOPER (FULL TIME)",
+      title: "FRONTEND DEVELOPER (FULL TIME)",
       company: "Phuong Trang Bus Corporation – FUTA Bus Lines",
       period: "03/2022 - Present",
       position: "Member",
-      teamSize: "5-7",
+      teamSize: "Worked on multiple projects, each with approximately 5-7members.",
       responsibilities: [
-        "Implementing features such as online ticket booking, ticket lookup, admin management systems, and interactive dashboards for data visualization, creating responsive layouts based on product wireframes, developing informational websites, landing pages.",
-        "Setting up and managing CMS Strapi to handle backend operations and data management, integrating with RESTful APIs and GraphQL.",
-        "Implementing Firebase Authentication for secure login and real-time message listeners to enhance user interaction.",
-        "Improving application performance by optimizing components, managing state efficiently, utilizing Redis for caching, and integrating CDN for faster content delivery."
+        {
+          category: "Feature Development",
+          points: [
+            "Implementing features such as online ticket booking, ticket lookup, admin management systems, and interactive dashboards for data visualization.",
+            "Creating responsive layouts based on product wireframes, developing informational websites, landing pages."
+          ]
+        },
+        {
+          category: "CMS & Backend Development",
+          points: [
+            "Setting up and managing CMS Strapi to handle backend operations and data management.",
+            "Integrating with RESTful APIs and GraphQL."
+          ]
+        },
+        {
+          category: "Authentication & Messaging",
+          points: [
+            "Implementing Firebase Authentication, OAuth2, and JWT for secure login and session management.",
+            "Building real-time message listeners to enhance user interaction."
+          ]
+        },
+        {
+          category: "Optimization & Performance",
+          points: [
+            "Optimize components (memoization, lazy loading, avoid unnecessary re-renders).",
+            "Code splitting & dynamic import in Next.js to reduce bundle size.",
+            "Tree-shaking and removing unused dependencies.",
+            "Use CDN to deliver static content images.",
+            "Optimize images (WebP, lazy loading images).",
+            "Reduce CSS bundle size with Tailwind.",
+            "Manage state efficiently with Redux, SWR, React Query.",
+            "Implement client-side caching (IndexedDB, LocalStorage, Redis).",
+            "Use prefetching/pagination for APIs instead of loading all data at once.",
+            "Use HTTP/2, gzip, Brotli for data compression.",
+            "Reduce number of requests with API batching and GraphQL."
+          ]
+        }
       ],
-      technology: "ReactJS, Redux, Antd, Tailwind CSS, Next.js, TypeScript, and CMS Strapi for web application development and maintenance."
+      technology: "ReactJS, Next.js, TypeScript, Redux, Ant Design, Tailwind CSS, CMS Strapi"
     },
     {
-      title: "FRONT DEVELOPER (FULL TIME)",
+      title: "FRONTEND DEVELOPER (FULL TIME)",
       company: "FPT TELECOM JOINT STOCK COMPANY",
       period: "06/2018 - 03/2022",
       position: "Member",
       teamSize: "6",
       responsibilities: [
-        "Implementing features such as admin management systems, dashboards for data visualization, creating and implementing website layouts based on product wireframes, developing new features, handling promotional events, and building file storage and upload functionalities for web applications.",
-        "Experience integrating MoMo, ShopeePay, BlueSea, and ZaloPay APIs.",
-        "Skilled in MySQL, MongoDB, MariaDB, and Redis (for caching), optimizing performance with stored procedures and triggers."
+        {
+          category: "Feature Development",
+          points: [
+            "Implemented features such as admin management systems, dashboards, new features, promotional events, and file storage/upload functionalities."
+          ]
+        },
+        {
+          category: "Payment Integration",
+          points: [
+            "Integrated multiple payment gateways: MoMo, ShopeePay, BlueSea, ZaloPay."
+          ]
+        },
+        {
+          category: "Database Optimization",
+          points: [
+            "Managed and optimized databases (MySQL, MongoDB, MariaDB, Redis) with stored procedures and triggers."
+          ]
+        }
       ],
-      technology: "Yii2, Material.io, AngularJS, ReactJS, Ajax."
+      technology: "Yii2, Material UI, AngularJS, ReactJS, Ajax"
     },
     {
-      title: "FRONT DEVELOPER (FULL TIME)",
+      title: "FRONTEND DEVELOPER (FULL TIME)",
       company: "HOANG VINH PHAT COMPANY",
       period: "05/2017 - 05/2018",
       position: "Member",
       teamSize: "3",
       responsibilities: [
-        "Building and customizing websites based on the Flatsome theme, modifying designs according to client requirements.",
-        "Creating custom post types, custom categories, custom archives, and custom pages, as well as developing custom shortcodes and functions.",
-        "Implementing WooCommerce for e-commerce websites.",
-        "Utilizing Advanced Custom Fields (ACF) to create dynamic and customizable fields.",
-        "Optimizing and configuring available plugins to enhance website performance and functionality."
+        {
+          category: "Feature Development",
+          points: [
+            "Building and customizing websites based on the Flatsome theme, modifying designs according to client requirements."
+          ]
+        },
+        {
+          category: "Custom Development",
+          points: [
+            "Creating custom post types, custom categories, custom archives, and custom pages, as well as developing custom shortcodes and functions."
+          ]
+        },
+        {
+          category: "E-Commerce Integration",
+          points: [
+            "Implementing WooCommerce for e-commerce websites."
+          ]
+        },
+        {
+          category: "Dynamic Content Management",
+          points: [
+            "Utilizing Advanced Custom Fields (ACF) to create dynamic and customizable fields."
+          ]
+        },
+        {
+          category: "Performance Optimization",
+          points: [
+            "Optimizing and configuring available plugins to enhance website performance and functionality."
+          ]
+        }
       ],
-      technology: "Developing web applications using WordPress, PHP, HTML, and CSS."
+      technology: "WordPress, PHP, HTML, CSS"
     }
   ],
   education: [
@@ -75,21 +148,27 @@ const data = {
       "Teamwork & Communication: Good listening skills, problem-solving ability, and strong collaboration in a team environment."
     ],
     technicalSkills: [
-      "HTML/CSS","JavaScript","ReactJS","NextJS","Redux","TypeScript","Tailwind CSS","Antd","CMS Strapi","Firebase","RESTful APIs","GraphQL","PHP","WordPress","MySQL","MongoDB","Redis","AngularJS","Yii2"
+      "React", "Next.js", "Redux", "TypeScript", "TailwindCSS", "Ant Design", "Material UI",
+      "IndexedDB", "LocalStorage",
+      "Strapi", "PHP (Yii2)", "WordPress",
+      "MySQL", "MongoDB", "MariaDB", "Redis",
+      "REST API", "GraphQL", "Firebase Authentication", "OAuth2", "JWT"
     ]
   }
 }
+
 export default function CV() {
   return (
     <div className="bg-slate-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
+        {/* Header */}
         <div className="bg-slate-800 text-white p-8">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-6">
             <div>
               <h1 className="text-3xl font-bold">{data.personalInfo.name}</h1>
               <h2 className="text-xl text-slate-300 mt-1">{data.personalInfo.title}</h2>
               <div className="flex flex-wrap gap-3 mt-4">
-                {data.personalInfo.contacts.map((contact,index) => (
+                {data.personalInfo.contacts.map((contact, index) => (
                   <div key={index} className="flex items-center gap-1 text-sm">
                     <contact.icon className="h-4 w-4" />
                     <span>{contact.text}</span>
@@ -109,7 +188,9 @@ export default function CV() {
           </div>
         </div>
 
+        {/* Content */}
         <div className="p-8">
+          {/* Objective */}
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <User className="h-5 w-5 text-slate-700" />
@@ -118,6 +199,7 @@ export default function CV() {
             <p className="text-slate-600">{data.objective}</p>
           </section>
 
+          {/* Work Experience */}
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <Briefcase className="h-5 w-5 text-slate-700" />
@@ -125,7 +207,7 @@ export default function CV() {
             </div>
 
             <div className="space-y-8">
-              {data.experience.map((job,index) => (
+              {data.experience.map((job, index) => (
                 <div key={index} className="relative pl-8 border-l-2 border-slate-200">
                   <div className="absolute w-4 h-4 bg-slate-800 rounded-full -left-[9px] top-1"></div>
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2">
@@ -144,11 +226,18 @@ export default function CV() {
                   </div>
                   <div className="mb-2">
                     <span className="font-medium">Responsibilities:</span>
-                    <ul className="list-disc list-inside text-slate-600 space-y-1 mt-1 ml-4">
-                      {job.responsibilities.map((responsibility,idx) => (
-                        <li key={idx}>{responsibility}</li>
+                    <div className="mt-2 ml-4 space-y-3">
+                      {job.responsibilities.map((resp, rIdx) => (
+                        <div key={rIdx}>
+                          <div className="font-medium text-slate-700">{resp.category}:</div>
+                          <ul className="list-disc list-inside text-slate-600 space-y-1 ml-4">
+                            {resp.points.map((p, pIdx) => (
+                              <li key={pIdx}>{p}</li>
+                            ))}
+                          </ul>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
                   </div>
                   <div>
                     <div className="font-medium">Technology:</div> {job.technology}
@@ -158,13 +247,14 @@ export default function CV() {
             </div>
           </section>
 
+          {/* Education */}
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <GraduationCap className="h-5 w-5 text-slate-700" />
               <h3 className="text-xl font-bold border-b border-slate-200 pb-2 w-full">EDUCATION</h3>
             </div>
 
-            {data.education.map((edu,index) => (
+            {data.education.map((edu, index) => (
               <Card key={index} className="mb-4">
                 <CardContent className="p-4">
                   <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start">
@@ -179,6 +269,7 @@ export default function CV() {
             ))}
           </section>
 
+          {/* Additional Information */}
           <section className="mb-8">
             <div className="flex items-center gap-2 mb-4">
               <Info className="h-5 w-5 text-slate-700" />
@@ -188,7 +279,7 @@ export default function CV() {
             <div className="mb-4">
               <h4 className="font-semibold mb-2">Work Approach & Soft Skills:</h4>
               <ul className="list-disc list-inside text-slate-600 space-y-1 ml-4">
-                {data.additionalInfo.workApproach.map((approach,index) => (
+                {data.additionalInfo.workApproach.map((approach, index) => (
                   <li key={index}>{approach}</li>
                 ))}
               </ul>
@@ -197,7 +288,7 @@ export default function CV() {
             <div className="mt-6">
               <h4 className="font-semibold mb-2">Technical Skills:</h4>
               <div className="flex flex-wrap gap-2">
-                {data.additionalInfo.technicalSkills.map((skill,index) => (
+                {data.additionalInfo.technicalSkills.map((skill, index) => (
                   <Badge key={index}>{skill}</Badge>
                 ))}
               </div>
@@ -207,7 +298,6 @@ export default function CV() {
           <Separator className="my-6" />
         </div>
       </div>
-    </div >
+    </div>
   )
 }
-

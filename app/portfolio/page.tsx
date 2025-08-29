@@ -28,8 +28,8 @@ async function getProjects() {
         "Comprehensive administrative dashboard for FUTA Bus Lines, providing real-time monitoring, route management, and business analytics.",
       folderName: "ADMIN_CITY_BUS",
       category: "web",
-      technologies: ["React","Next.js","Redux","Tailwind CSS","Chart.js","WebSockets"],
-      liveUrl: "https://admin.futabus.vn",
+      technologies: ["React","Next.js","Redux","Tailwind CSS","Chart.js"],
+      // liveUrl: "https://admin.futabus.vn",
       githubUrl: "",
       featured: true,
       longDescription:
@@ -50,17 +50,17 @@ async function getProjects() {
     },
     {
       id: 2,
-      title: "FUTA Bus Website",
+      title: "FUTA CityBus Website",
       description:
-        "Public-facing website for FUTA Bus Lines with online booking, route information, and customer support.",
+        "Public-facing website for FUTA CityBus with online booking, route information, and customer support.",
       folderName: "WEB_CITY_BUS",
       category: "web",
       technologies: ["Next.js","Tailwind CSS","Redux","Google Maps API","Payment Gateway Integration"],
-      liveUrl: "https://futabus.vn",
+      // liveUrl: "https://futabus.vn",
       githubUrl: "",
       featured: true,
       longDescription:
-        "The FUTA Bus website provides customers with information about bus routes, schedules, and services. It includes an online booking system, monthly pass management, route finder, news updates, and customer support features. The website also offers comprehensive user account management with features like saved addresses, transaction history, password and PIN security, support ticket system, and FutaPay digital wallet integration. The website is designed to be user-friendly and responsive, providing a seamless experience for customers across all devices.",
+        "The FUTA CityBus website provides customers with information about bus routes, schedules, and services. It includes an online booking system, monthly pass management, route finder, news updates, and customer support features. The website also offers comprehensive user account management with features like saved addresses, transaction history, password and PIN security, support ticket system, and FutaPay digital wallet integration. The website is designed to be user-friendly and responsive, providing a seamless experience for customers across all devices.",
       challenges: [
         "Creating an intuitive booking flow for diverse route options",
         "Implementing secure payment processing with multiple providers",
@@ -83,8 +83,8 @@ async function getProjects() {
       description: "Content Management System for FUTA Bus Lines, managing website content, promotions, and news.",
       folderName: "CMS_CITY_BUS",
       category: "cms",
-      technologies: ["Strapi","React","GraphQL","PostgreSQL"],
-      liveUrl: "https://cms.futabus.vn",
+      technologies: ["Strapi","React","GraphQL"],
+      // liveUrl: "https://cms.futabus.vn",
       githubUrl: "",
       featured: true,
       longDescription:
@@ -98,8 +98,8 @@ async function getProjects() {
         "Customer Relationship Management system for tracking customer interactions, support tickets, and service quality.",
       folderName: "CRM",
       category: "web",
-      technologies: ["React","Redux","Node.js","MongoDB"],
-      liveUrl: "https://crm.futabus.vn",
+      technologies: ["React","Redux","Firebase"],
+      // liveUrl: "https://crm.futabus.vn",
       githubUrl: "",
       featured: true,
       longDescription:
@@ -123,8 +123,8 @@ async function getProjects() {
         "Content Management System for FUTA Land recruitment, managing job listings and applicant information.",
       folderName: "CMS_FUTA_LAND",
       category: "cms",
-      technologies: ["Strapi","React","RESTful API","MySQL"],
-      liveUrl: "https://cms.futaland.vn",
+      technologies: ["Strapi","React"],
+      // liveUrl: "https://cms.futaland.vn",
       githubUrl: "",
       featured: true,
       longDescription:
@@ -137,28 +137,15 @@ async function getProjects() {
       description: "Real estate website for FUTA Land, showcasing property listings and development projects.",
       folderName: "WEB_FUTA_LAND",
       category: "web",
-      technologies: ["Next.js","Tailwind CSS","Redux","Google Maps API"],
-      liveUrl: "https://futaland.vn",
+      technologies: ["Next.js","Tailwind CSS","Redux"],
+      // liveUrl: "https://futaland.vn",
       githubUrl: "",
       featured: true,
       longDescription:
         "The FUTA Land website showcases real estate properties and development projects. It includes property search, filtering, detailed listings with images and maps, and inquiry forms.",
       screenshots: await getProjectImages("WEB_FUTA_LAND"),
     },
-    {
-      id: 7,
-      title: "Board of Directors Management System",
-      description: "Board of Directors management system for tracking meetings, decisions, and corporate governance.",
-      folderName: "BOD",
-      category: "web",
-      technologies: ["React","Material UI","Node.js","MongoDB"],
-      liveUrl: "https://bod.example.com",
-      githubUrl: "",
-      featured: false,
-      longDescription:
-        "The Board of Directors Management System provides tools for organizing board meetings, tracking decisions, managing documents, and ensuring compliance with corporate governance requirements.",
-      screenshots: await getProjectImages("BOD"),
-    },
+   
   ]
   return projects;
 }
@@ -285,31 +272,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#0f0f0f]">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0,y: 20 }}
-            animate={isLoaded ? { opacity: 1,y: 0 } : {}}
-            transition={{ duration: 0.6,delay: 0.4 }}
-            className="max-w-4xl mx-auto text-center"
-          >
-            <h2 className="text-4xl font-bold mb-4">Let's Work Together</h2>
-            <div className="h-1 w-20 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mb-10"></div>
-            <p className="text-xl text-gray-300 mb-10">
-              I'm currently available for freelance work. If you have a project that you want to get started, think you
-              need my help with something or just fancy saying hello, then get in touch.
-            </p>
-            <Button
-              asChild
-              size="lg"
-              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 border-0"
-            >
-              <a href="mailto:tranvulinh280694@gmail.com">Contact Me</a>
-            </Button>
-          </motion.div>
-        </div>
-      </section>
 
       {selectedProject && (
         <ProjectDetail project={selectedProject} isOpen={!!selectedProject} onClose={closeProjectDetail} />
